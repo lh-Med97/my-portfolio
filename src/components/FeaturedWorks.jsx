@@ -12,22 +12,22 @@ const projects = [
     liveLink: "https://yourportfolio.com",
     githubLink: "https://github.com/yourusername/portfolio",
   },
-  {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce platform with user authentication, product management, and payment integration.",
-    image: "/ecommerce-preview.jpg",
-    technologies: ["Next.js", "MongoDB", "Stripe"],
-    liveLink: "https://yourecommerce.com",
-    githubLink: "https://github.com/yourusername/ecommerce",
-  },
-  {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team features.",
-    image: "/task-app-preview.jpg",
-    technologies: ["React", "Firebase", "Material-UI"],
-    liveLink: "https://yourtaskapp.com",
-    githubLink: "https://github.com/yourusername/task-app",
-  }
+  // {
+  //   title: "E-Commerce Platform",
+  //   description: "Full-stack e-commerce platform with user authentication, product management, and payment integration.",
+  //   image: "/ecommerce-preview.jpg",
+  //   technologies: ["Next.js", "MongoDB", "Stripe"],
+  //   liveLink: "https://yourecommerce.com",
+  //   githubLink: "https://github.com/yourusername/ecommerce",
+  // },
+  // {
+  //   title: "Task Management App",
+  //   description: "A collaborative task management application with real-time updates and team features.",
+  //   image: "/task-app-preview.jpg",
+  //   technologies: ["React", "Firebase", "Material-UI"],
+  //   liveLink: "https://yourtaskapp.com",
+  //   githubLink: "https://github.com/yourusername/task-app",
+  // }
 ];
 
 function FeaturedWorks() {

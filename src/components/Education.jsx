@@ -39,22 +39,22 @@ const certificates = [
     description: "Maîtrise des concepts avancés de React.js, Redux, et développement d'applications modernes",
     icon: FaCertificate
   },
-  {
-    type: "certificate",
-    title: "Laravel Professional",
-    institution: "Laravel Daily",
-    date: "2023",
-    description: "Développement backend avancé avec Laravel, API REST, et meilleures pratiques",
-    icon: FaCertificate
-  },
-  {
-    type: "certificate",
-    title: "Full Stack Development",
-    institution: "FreeCodeCamp",
-    date: "2022",
-    description: "Développement web full stack avec focus sur JavaScript, React, et Node.js",
-    icon: FaCertificate
-  }
+  // {
+  //   type: "certificate",
+  //   title: "Laravel Professional",
+  //   institution: "Laravel Daily",
+  //   date: "2023",
+  //   description: "Développement backend avancé avec Laravel, API REST, et meilleures pratiques",
+  //   icon: FaCertificate
+  // },
+  // {
+  //   type: "certificate",
+  //   title: "Full Stack Development",
+  //   institution: "FreeCodeCamp",
+  //   date: "2022",
+  //   description: "Développement web full stack avec focus sur JavaScript, React, et Node.js",
+  //   icon: FaCertificate
+  // }
 ];
 
 const TimelineItem = ({ item, index }) => (
