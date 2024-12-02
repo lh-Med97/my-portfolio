@@ -5,18 +5,26 @@ import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 const education = [
   {
     type: "education",
-    title: "Master's in Computer Science",
-    institution: "University Name",
-    date: "2020 - 2022",
-    description: "Specialized in Software Engineering and Web Development",
+    title: "DEVELOPMENT DIGITAL OPTION WEB FULL STACK",
+    institution: "Institut Spécialisé de Technologie NTiC Safi",
+    date: "Septembre 2021 - Juillet 2023",
+    description: "Formation complète en développement web full stack, spécialisée dans les technologies modernes du web",
     icon: FaGraduationCap
   },
   {
     type: "education",
-    title: "Bachelor's in Computer Science",
-    institution: "University Name",
-    date: "2017 - 2020",
-    description: "Focus on Programming and Software Development",
+    title: "BAC PRO SCIENTIFIQUE",
+    institution: "Abdkrim Lkhtabi Safi",
+    date: "Septembre 2021",
+    description: "Baccalauréat professionnel en sciences avec spécialisation en maintenance informatique et réseaux",
+    icon: FaGraduationCap
+  },
+  {
+    type: "education",
+    title: "TECHNICIEN EN MAINTENANCE ET SUPPORT INFORMATIQUE ET RESEAUX",
+    institution: "Institut Spécialisé Technologie Appliquée NTiC Safi",
+    date: "Septembre 2018 - Juillet 2020",
+    description: "Formation technique en maintenance informatique et réseaux, support technique et gestion des systèmes",
     icon: FaGraduationCap
   }
 ];
@@ -24,18 +32,26 @@ const education = [
 const certificates = [
   {
     type: "certificate",
-    title: "Full Stack Web Development",
+    title: "Formation React.js Avancée",
     institution: "Udemy",
     date: "2023",
-    description: "Comprehensive course covering modern web development technologies",
+    description: "Maîtrise des concepts avancés de React.js, Redux, et développement d'applications modernes",
     icon: FaCertificate
   },
   {
     type: "certificate",
-    title: "React & Node.js Development",
-    institution: "Coursera",
+    title: "Laravel Professional",
+    institution: "Laravel Daily",
+    date: "2023",
+    description: "Développement backend avancé avec Laravel, API REST, et meilleures pratiques",
+    icon: FaCertificate
+  },
+  {
+    type: "certificate",
+    title: "Full Stack Development",
+    institution: "FreeCodeCamp",
     date: "2022",
-    description: "Advanced web development with React and Node.js",
+    description: "Développement web full stack avec focus sur JavaScript, React, et Node.js",
     icon: FaCertificate
   }
 ];
@@ -88,14 +104,14 @@ function Education() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-gray-600 via-gray-400 to-black dark:from-gray-300 dark:via-gray-100 dark:to-gray-400 text-transparent bg-clip-text"
         >
-          Education & Certificates
+          Education & Certifications
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Education Timeline */}
           <div>
             <h3 className="text-2xl font-bold mb-8 text-gray-800 dark:text-gray-200">
-              Education
+              Formation
             </h3>
             <div className="relative">
               {education.map((item, index) => (
@@ -107,7 +123,7 @@ function Education() {
           {/* Certificates Timeline */}
           <div>
             <h3 className="text-2xl font-bold mb-8 text-gray-800 dark:text-gray-200">
-              Certificates
+              Certifications
             </h3>
             <div className="relative">
               {certificates.map((item, index) => (
