@@ -5,29 +5,30 @@ import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 const education = [
   {
     type: "education",
-    title: "DEVELOPMENT DIGITAL OPTION WEB FULL STACK",
-    institution: "Institut Spécialisé de Technologie NTiC Safi",
-    date: "Septembre 2021 - Juillet 2023",
-    description: "Formation complète en développement web full stack, spécialisée dans les technologies modernes du web",
+    title: "WEB FULL STACK DEVELOPMENT DIGITAL OPTION",
+    institution: "NTiC Safi Institute of Specialized Technology",
+    date: "September 2021 - July 2023",
+    description: "Comprehensive training in full-stack web development, specializing in modern web technologies",
     icon: FaGraduationCap
   },
   {
     type: "education",
-    title: "BAC PRO SCIENTIFIQUE",
-    institution: "Abdkrim Lkhtabi Safi",
-    date: "Septembre 2021",
-    description: "Baccalauréat professionnel en sciences avec spécialisation en maintenance informatique et réseaux",
+    title: "PROFESSIONAL SCIENTIFIC HIGH SCHOOL DIPLOMA",
+    institution: "Abdkrim Lkhtabi Safi High School",
+    date: "September 2021",
+    description: "Professional high school diploma in sciences with a specialization in computer maintenance and networks",
     icon: FaGraduationCap
   },
   {
     type: "education",
-    title: "TECHNICIEN EN MAINTENANCE ET SUPPORT INFORMATIQUE ET RESEAUX",
-    institution: "Institut Spécialisé Technologie Appliquée NTiC Safi",
-    date: "Septembre 2018 - Juillet 2020",
-    description: "Formation technique en maintenance informatique et réseaux, support technique et gestion des systèmes",
+    title: "TECHNICIAN IN COMPUTER MAINTENANCE AND NETWORK SUPPORT",
+    institution: "NTiC Safi Institute of Applied Technology",
+    date: "September 2018 - July 2020",
+    description: "Technical training in computer maintenance, network support, and system management",
     icon: FaGraduationCap
   }
 ];
+
 
 const certificates = [
   {
