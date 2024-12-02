@@ -3,7 +3,11 @@ import { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // Initialize state from localStorage or default to true
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme ? JSON.parse(savedTheme) : true;
+  });
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -12,10 +16,12 @@ export const ThemeProvider = ({ children }) => {
     } else {
       root.classList.remove('dark');
     }
+    // Save to localStorage whenever theme changes
+    localStorage.setItem('theme', JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(prevMode => !prevMode);
   };
 
   return (
@@ -25,4 +31,10 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
+};
