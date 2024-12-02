@@ -19,7 +19,7 @@ export default function Navbar() {
           <IoHomeOutline size={18} />
         </a>
         <a 
-          href="https://www.linkedin.com/in/mohamedlahmamsi" 
+          href="https://www.linkedin.com/in/lahmamsi-mohammed-5882001ba/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-gray-300 hover:text-white transition-colors duration-200"
@@ -27,7 +27,7 @@ export default function Navbar() {
           <IoLogoLinkedin size={18} />
         </a>
         <a 
-          href="https://github.com/mohamedlahmamsi" 
+          href="https://www.linkedin.com/in/lahmamsi-mohammed-5882001ba/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-gray-300 hover:text-white transition-colors duration-200"
@@ -35,7 +35,7 @@ export default function Navbar() {
           <IoLogoGithub size={18} />
         </a>
         <a 
-          href="https://www.upwork.com/your-profile" 
+          href="https://www.upwork.com/freelancers/~0153c1a8645a730bb9" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-gray-300 hover:text-white transition-colors duration-200"

@@ -111,12 +111,12 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="flex justify-center gap-6 mt-8"
         >
-          <a href="https://github.com/mohamedlahmamsi" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/lh-Med97" target="_blank" rel="noopener noreferrer"
              className="text-gray-400 hover:text-white transition-colors duration-300"
           >
             <FaGithub size={28} />
           </a>
-          <a href="https://linkedin.com/in/mohamedlahmamsi" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/lahmamsi-mohammed-5882001ba/" target="_blank" rel="noopener noreferrer"
              className="text-gray-400 hover:text-white transition-colors duration-300"
           >
             <FaLinkedin size={28} />
