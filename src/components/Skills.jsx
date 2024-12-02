@@ -1,32 +1,44 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaDocker } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql } from 'react-icons/si';
+import { FaReact, FaLaravel, FaPhp, FaGitAlt, FaJenkins, FaHtml5, FaCss3 } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss, SiMongodb, SiRedux, SiVuedotjs, SiJira } from 'react-icons/si';
+import { TbSql } from 'react-icons/tb';
 
 const skills = [
   {
+    category: "Full Stack Development",
+    items: [
+      { name: "PHP/Laravel", icon: FaLaravel, level: 90 },
+      { name: "React.js", icon: FaReact, level: 85 },
+      { name: "Vue.js", icon: SiVuedotjs, level: 80 },
+      { name: "Redux Toolkit", icon: SiRedux, level: 85 },
+    ]
+  },
+  {
     category: "Frontend Development",
     items: [
-      { name: "React", icon: FaReact, level: 90 },
+      { name: "HTML5", icon: FaHtml5, level: 95 },
+      { name: "CSS3", icon: FaCss3, level: 90 },
       { name: "JavaScript", icon: SiJavascript, level: 85 },
-      { name: "TypeScript", icon: SiTypescript, level: 80 },
-      { name: "Tailwind CSS", icon: SiTailwindcss, level: 85 },
+      { name: "Tailwind CSS", icon: SiTailwindcss, level: 90 },
     ]
   },
   {
-    category: "Backend Development",
+    category: "Backend & Database",
     items: [
-      { name: "Node.js", icon: FaNodeJs, level: 85 },
-      { name: "Python", icon: FaPython, level: 80 },
-      { name: "MongoDB", icon: SiMongodb, level: 75 },
-      { name: "PostgreSQL", icon: SiPostgresql, level: 70 },
+      { name: "PHP", icon: FaPhp, level: 90 },
+      { name: "SQL", icon: TbSql, level: 85 },
+      { name: "MongoDB", icon: SiMongodb, level: 80 },
+      { name: "REST APIs", icon: FaLaravel, level: 90 },
     ]
   },
   {
-    category: "Tools & Technologies",
+    category: "DevOps & Collaboration",
     items: [
-      { name: "Git", icon: FaGitAlt, level: 85 },
-      { name: "Docker", icon: FaDocker, level: 75 },
+      { name: "Git", icon: FaGitAlt, level: 90 },
+      { name: "Jenkins", icon: FaJenkins, level: 85 },
+      { name: "Jira", icon: SiJira, level: 85 },
+      { name: "Agile", icon: SiJira, level: 85 },
     ]
   }
 ];
@@ -66,7 +78,7 @@ function Skills() {
           Skills & Competences
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {skills.map((category, index) => (
             <motion.div
               key={index}
