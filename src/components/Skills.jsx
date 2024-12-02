@@ -46,7 +46,9 @@ const skills = [
 const SkillBar = ({ name, level, icon: Icon }) => (
   <motion.div 
     initial={{ opacity: 0, x: -20 }}
-    animate={{ opacity: 1, x: 0 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true, margin: "-50px" }}
+    transition={{ duration: 0.5 }}
     className="mb-6"
   >
     <div className="flex items-center mb-2">
@@ -57,7 +59,8 @@ const SkillBar = ({ name, level, icon: Icon }) => (
     <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
       <motion.div
         initial={{ width: 0 }}
-        animate={{ width: `${level}%` }}
+        whileInView={{ width: `${level}%` }}
+        viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="h-full bg-gradient-to-r from-gray-600 to-gray-400 dark:from-gray-400 dark:to-gray-200"
       />
@@ -71,20 +74,22 @@ function Skills() {
       <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
           className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-gray-600 via-gray-400 to-black dark:from-gray-300 dark:via-gray-100 dark:to-gray-400 text-transparent bg-clip-text"
         >
           Skills & Competences
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skills.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-white dark:bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl dark:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300"
             >
               <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200">
