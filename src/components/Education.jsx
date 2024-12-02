@@ -5,7 +5,7 @@ import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 const education = [
   {
     type: "education",
-    title: "WEB FULL STACK DEVELOPMENT DIGITAL OPTION",
+    title: "FULL STACK WEB DEVELOPER ",
     institution: "NTiC Safi Institute of Specialized Technology",
     date: "September 2021 - July 2023",
     description: "Comprehensive training in full-stack web development, specializing in modern web technologies",
