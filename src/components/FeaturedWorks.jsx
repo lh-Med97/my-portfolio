@@ -2,15 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
+import portfoliobg from "./portfoliobg.png";
 
 const projects = [
   {
     title: "Portfolio Website",
     description: "A modern portfolio website built with React, Tailwind CSS, and Framer Motion. Features smooth animations and responsive design.",
-    image: "/portfolio-preview.jpg",
+    image: portfoliobg,
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     liveLink: "https://yourportfolio.com",
-    githubLink: "https://github.com/yourusername/portfolio",
+    githubLink: "https://github.com/lh-Med97/my-portfolio/tree/master",
   },
   // {
   //   title: "E-Commerce Platform",
