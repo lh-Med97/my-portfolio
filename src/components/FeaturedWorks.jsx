@@ -11,7 +11,7 @@ const projects = [
     image: portfoliobg,
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     liveLink: "https://yourportfolio.com",
-    githubLink: "https://github.com/yourusername/portfolio",
+    githubLink: "https://github.com/lh-Med97/my-portfolio/tree/master",
   },
   // {
   //   title: "E-Commerce Platform",
