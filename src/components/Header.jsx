@@ -9,10 +9,9 @@ const Header = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className='
-      h-screen flex flex-col justify-center items-center '
+      className='w-full px-4 h-screen flex flex-col justify-center items-center overflow-hidden'
     >
-      <div className='relative group'>
+      <div className='relative group max-w-full'>
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ 
@@ -60,7 +59,7 @@ const Header = () => {
                 duration: 0.8,
                 ease: "easeOut"
               }}
-              className='rounded-full w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] dark:shadow-[0_0_20px_rgba(0,0,0,0.3)]'
+              className='rounded-full w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-cover transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] dark:shadow-[0_0_20px_rgba(0,0,0,0.3)]'
               style={{ 
                 filter: 'brightness(1.05) contrast(1.05)',
               }}
@@ -73,7 +72,7 @@ const Header = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className='text-center mt-8 max-w-3xl'
+        className='text-center mt-8 px-4 max-w-3xl mx-auto'
       >
         <TypeAnimation
           sequence={[
