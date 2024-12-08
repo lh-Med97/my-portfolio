@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './App.css'
 import Header from './components/Header'
 import FeaturedWorks from './components/FeaturedWorks'
@@ -8,6 +8,7 @@ import ThemeToggle from './components/ThemeToggle'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import About from './components/About'
+
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <div className="w-full">
           <Header/>
         </div>
-        <div className="w-full">
+        <div className="w-full ">
           <About />
         </div>
         <div className='w-full bg-gray-100 dark:bg-black text-gray-900 dark:text-white'>

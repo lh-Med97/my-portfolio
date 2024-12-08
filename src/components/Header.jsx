@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import logo from "./Design.png";
 import { TypeAnimation } from 'react-type-animation';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -110,16 +110,22 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="flex justify-center gap-6 mt-8"
         >
-          <a href="https://github.com/lh-Med97" target="_blank" rel="noopener noreferrer"
-             className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            <FaGithub size={28} />
-          </a>
-          <a href="https://www.linkedin.com/in/lahmamsi-mohammed-5882001ba/" target="_blank" rel="noopener noreferrer"
-             className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            <FaLinkedin size={28} />
-          </a>
+           <div className="flex items-center gap-2">
+    <a href="mailto:lahmamsi.med@gmail.com" 
+       className="flex items-center text-gray-600 hover:text-white transition-colors duration-300 dark:text-gray-300"
+    >
+      <FaEnvelope size={28} className="mr-2" /> 
+      <span>lahmamsi.med@gmail.com</span>
+    </a>
+  </div>
+  <div className="flex items-center gap-2">
+    <a href="tel:+212612965216" 
+       className="flex items-center text-gray-600 hover:text-white transition-colors duration-300 dark:text-gray-300"
+    >
+      <FaPhone size={28} className="mr-2" /> 
+      <span>+212 6 12 96 52 16</span>
+    </a>
+  </div>
         </motion.div>
       </motion.div>
     </motion.div>
